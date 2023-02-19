@@ -5,9 +5,15 @@ import './Popup.css';
 const Popup = () => {
   const [text, setText] = React.useState('');
   const [messages, setMessages] = React.useState([]);
+  const [rawHtml, setRawHtml] = React.useState('');
+
+  const updateHtml = () => {
+    if (!rawHtml) setRawHtml(document.body.innerHTML);
+  };
 
   const handleSubmit = () => {
     if (!text) return;
+    updateHtml();
     setMessages([...messages, { text, isUser: true }]);
     setText('');
   };

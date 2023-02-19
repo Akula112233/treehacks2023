@@ -40,15 +40,19 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
     case 'summarizeText':
       processText(info.selectionText, {
         name: 'summarizeText',
-        highlighted: true,
-        type: 'summarize',
+        reqType: 'summarize',
+        highlighted: info.selectionText,
+        article: '',
+        question: 'n/a',
       });
       break;
     case 'simplifyText':
       processText(info.selectionText, {
         name: 'selectionText',
-        highlighted: true,
-        type: 'simplify',
+        highlighted: info.selectionText,
+        reqType: 'simplify',
+        article: '',
+        question: 'n/a',
       });
       break;
     case 'summarizeArticle':
@@ -57,12 +61,14 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
         highlighted: false,
         type: 'summarize',
       });
+      break;
     case 'simplifyArticle':
       processText('', {
         name: 'simplifyArticle',
         highlighted: false,
         type: 'simplify',
       });
+      break;
   }
 });
 
@@ -71,5 +77,9 @@ const processText = async (text, params) => {
     active: true,
     lastFocusedWindow: true,
   });
-  const response = await chrome.tabs.sendMessage(tab.id, { text, params });
+
+  console.log('tab', tab);
+  console.log('params: ', params);
+
+  await chrome.tabs.sendMessage(tab.id, { text, params });
 };
