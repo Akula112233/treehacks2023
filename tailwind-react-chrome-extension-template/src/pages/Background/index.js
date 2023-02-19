@@ -12,17 +12,38 @@ chrome.runtime.onInstalled.addListener(async () => {
 chrome.contextMenus.onClicked.addListener(async (info, tab) => {
   switch (info.menuItemId) {
     case 'summarizeText':
-      summarizeText(info.selectionText);
+      processText(info.selectionText, {
+        name: 'summarizeText',
+        highlighted: true,
+        type: 'summarize',
+      });
       break;
+    case 'simplifyText':
+      processText(info.selectionText, {
+        name: 'selectionText',
+        highlighted: true,
+        type: 'simplify',
+      });
+      break;
+    case 'summarizeArticle':
+      processText('', {
+        name: 'summarizeArticle',
+        highlighted: false,
+        type: 'summarize',
+      });
+    case 'simplifyArticle':
+      processText('', {
+        name: 'simplifyArticle',
+        highlighted: false,
+        type: 'simplify',
+      });
   }
 });
 
-const summarizeText = async (text) => {
+const processText = async (text, params) => {
   const [tab] = await chrome.tabs.query({
     active: true,
     lastFocusedWindow: true,
   });
-  const response = await chrome.tabs.sendMessage(tab.id, { text });
-  // console.log(response);
-  // console.log(`to summarize: ${text}`);
+  const response = await chrome.tabs.sendMessage(tab.id, { text, params });
 };
