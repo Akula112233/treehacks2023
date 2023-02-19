@@ -7,6 +7,7 @@ const Popup = () => {
   const [messages, setMessages] = React.useState([]);
 
   const handleSubmit = () => {
+    if (!text) return;
     setMessages([...messages, { text, isUser: true }]);
     setText('');
   };
@@ -17,12 +18,12 @@ const Popup = () => {
         <div className="p-3">
           <h1>Let's Talk About This Article</h1>
         </div>
-        <div className="my-auto overflow-y-scroll">
-          <div className="flex flex-col">
+        <div className="overflow-y-scroll h-full">
+          <div className="flex w-full flex-col my-auto">
             {messages.map((message, index) => (
-              <div
+              <p
                 className={`
-              flex flex-row text-sm w-auto my-1 p-2 rounded-md overflow-y-auto
+              text-sm my-1 p-2 rounded-md break-words
               ${
                 message.isUser
                   ? 'bg-blue-400 justify-self-end'
@@ -31,7 +32,7 @@ const Popup = () => {
                 key={index}
               >
                 {message.text}
-              </div>
+              </p>
             ))}
           </div>
         </div>
