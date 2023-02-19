@@ -19,7 +19,7 @@ const Popup = () => {
         >
           Learn React!
         </a>
-        <h6 className="text-red-500">The color of this paragraph is defined using Tailwind.</h6>
+        <h6 className="text-green-500">The color of this paragraph is defined using Tailwind.</h6>
         <Greetings />
       </header>
     </div>
