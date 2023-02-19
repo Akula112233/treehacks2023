@@ -10,7 +10,10 @@ def make_call(prompt, num_tokens=1000):
     return response
 
 def simplify(text, article):
-    prompt = article + "\nExplain this in simple terms using the above information: " + text + "\n"
+    text_file = open("prompts_simplify.txt", "r")
+    base_prompt = text_file.read()
+    prompt = base_prompt + text + "\n\nSimplified Version:\n"
+    print(prompt)
     return make_call(prompt)
 
 def simplify_all(article):
@@ -18,8 +21,11 @@ def simplify_all(article):
     return make_call(prompt)
 
 def summarize(text, article):
-    prompt = article + "\nSummarize this using the above information: " + text + "\n"
+    text_file = open("prompts_simplify.txt", "r")
+    base_prompt = text_file.read()
+    prompt = base_prompt + text + "\n\nSummarized Version:\n"
     return make_call(prompt)
+
 
 def summarize_all(article):
     prompt = article + "\nSummarize the content from the above article\n"

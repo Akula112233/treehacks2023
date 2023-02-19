@@ -1,0 +1,24 @@
+This is a text simplification program. The user inputs a prompt with complicated high-level vocabulary at a high reading level and the program responds with a simplified version with easier to understand vocabulary at a lower reading level.
+
+Prompt:
+Turkey's President Erdogan has declared a three-month state of emergency across areas hit by Monday's deadly earthquakes. Two extremely powerful quakes hit Turkey just nine hours apart. The first quake was a magnitude 7.5; the second registered 7.8 on the Richter scale. They are among the biggest earthquakes ever to hit Turkey. They caused huge loss of life and damage in southeast Turkey and in neighbouring Syria. President Erdogan warned of the danger of a "large number of aftershocks". He said: "Our teams are working to reach the disaster areas.…We are rapidly continuing the search and rescue operations…despite the difficulty of the conditions and the terrible weather."
+
+
+Simplified Version:
+There is a three-month emergency in Turkey after two deadly earthquakes. They are two of the biggest quakes ever in Turkey. Many people in Turkey and Syria have died. Many buildings are damaged. Turkey's president warned of many aftershocks. Search and rescue teams are trying to reach the disaster areas.
+
+--
+Prompt: 
+People are travelling internationally again after the hiatus that was caused by the coronavirus pandemic and the subsequent lockdowns. Many people are using the money they saved while borders were closed to embark on their bucket list trips. However, others are showing a reluctance to dust off their passports. A travel report from the Morning Consult website analyzed 16,000 surveys from people in 15 countries. The site found that 15 per cent of South Koreans and 14 per cent of Chinese and Americans, "never want to travel again". Those most unwilling to travel were the Japanese. The report stated that almost 35 per cent of Japanese respondents claimed they never wanted to leave Japan.
+
+Simplified Version: 
+People are travelling again after the end of coronavirus lockdowns. Many people are using the money they saved while borders closed to go on their bucket list trips. Others are less willing to dust off their passports. A travel report analyzed 16,000 surveys from people in 15 countries. The site found that 14 per cent of Chinese and Americans, "never want to travel again". Almost 35 per cent of Japanese people said they never wanted to leave Japan again.
+
+--
+Prompt:
+The UK's Prince Harry has written a book about his life. It is also about his thoughts on the death of his mother (Princess Diana), his relationship with the press, and being a royal. The book is called "Spare". The word "spare" means someone or something that only exists in case another person or thing is lost, broken, or worn out. The title "Spare" refers to the fact that Harry would only become the UK's king if his father and brother died. The book is a bestseller worldwide. It has been published in 16 languages. People waited in line for hours to buy it. In the UK, "Spare" went on sale at midnight on Sunday. One of the UK's leading bookstores, Waterstones, said "Spare" has been one of its "biggest pre-order titles for a decade".
+
+Simplified Version: 
+Prince Harry has written a book about his life, his mother's death, and his relationship with newspapers. It is called "Spare". This word means something that is only there in case another thing is lost or broken. The 410-page book is in 16 languages. It is the fastest selling non-fiction book ever written.
+--
+Prompt:
