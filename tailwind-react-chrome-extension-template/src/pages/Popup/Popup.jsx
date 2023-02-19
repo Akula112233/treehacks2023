@@ -8,16 +8,19 @@ const Popup = () => {
   const [disabled, setDisabled] = React.useState(false);
 
   const handleSubmit = async () => {
+    console.log(window);
     if (!text) return;
     setMessages([...messages, { text, isUser: true }]);
     const params = {
       name: 'qanda',
       highlighted: '',
       reqType: 'question',
-      article: document.body.innerHTML,
-      raw_website: document.body.innerHTML,
+      article: '',
+      raw_website: window.document.documentElement.innerText,
       question: text,
     };
+
+    alert(JSON.stringify(params));
 
     setDisabled(true);
 
