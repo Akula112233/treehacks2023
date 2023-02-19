@@ -6,7 +6,6 @@ from flask import Flask, request
 from flask_cors import CORS
 from readability import Document
 from bs4 import BeautifulSoup
-import os
 
 app = Flask(__name__)
 CORS(app)
