@@ -28,5 +28,12 @@
       "matches": []
     }
   ],
-  "permissions": ["contextMenus", "activeTab", "scripting", "storage", "cookies"]
+  "permissions": [
+    "webRequest",
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "storage",
+    "cookies"
+  ]
 }
