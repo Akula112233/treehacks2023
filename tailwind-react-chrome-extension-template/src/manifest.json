@@ -28,5 +28,5 @@
       "matches": []
     }
   ],
-  "permissions": ["contextMenus", "activeTab", "scripting"]
+  "permissions": ["contextMenus", "activeTab", "scripting", "storage", "cookies"]
 }

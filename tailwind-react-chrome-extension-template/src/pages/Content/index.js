@@ -1,9 +1,32 @@
 import { printLine } from './modules/print';
 
-console.log('Content script works!');
-console.log('Must reload extension for modifications to take effect.');
+// const getCookieValue = (name) =>
+//   document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || '';
 
-printLine("Using the 'printLine' function from the Print Module");
+// window.onload = () => {
+//   let transformations = getCookieValue('transformations');
+//   if (transformations) {
+//     transformations = JSON.parse(transformations);
+//   } else {
+//     transformations = [];
+//   }
+
+//   let to_display = getCookieValue('to_display');
+//   if (to_display) {
+//     to_display = JSON.parse(to_display);
+//   } else {
+//     to_display = [];
+//   }
+
+//   for(let i = 0; i < transformations.length; i++) {
+// 	if(to_display[i]) {
+// 		const highlightedElement = transformations[i].highlightedElement;
+// 		const box = transformations[i].box;
+// 		const insert_node = highlightedElement.anchorNode.parentElement;
+// 		insert_node.insertBefore(box, highlightedElement.anchorNode);
+// 	}
+//   }
+// };
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   const text = request.text;
@@ -22,7 +45,38 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   box.style.marginBottom = '0.75rem';
   //   box.style.width = '100%';
   box.style.height = '100%';
-  box.innerText = 'This is a box';
+  box.innerText = 'Resulting simplification of the text...';
 
+//   let transformations = getCookieValue('transformations');
+//   if (transformations) {
+//     transformations = JSON.parse(transformations);
+//   } else {
+//     transformations = [];
+//   }
+
+//   let to_display = getCookieValue('to_display');
+//   if (to_display) {
+//     to_display = JSON.parse(to_display);
+//   } else {
+//     to_display = [];
+//   }
+
+  //   console.log('wtf');
+  //   console.log(transformations);
+  //   console.log(to_display);
   insert_node.insertBefore(box, highlightedElement.anchorNode);
+//   transformations.push({ highlightedElement, box });
+//   to_display.push(true);
+//   setCookies(transformations, to_display);
+});
+
+const setCookies = (transformations, to_display) => {
+//   console.log(`set: ${JSON.stringify(transformations)} ${to_display}`);
+//   if (transformations)
+//     document.cookie = `transformations=${JSON.stringify(transformations)}`;
+//   if (to_display) document.cookie = `to_display=${JSON.stringify(to_display)}`;
+};
+
+window.addEventListener('beforeunload', () => {
+  setCookies();
 });

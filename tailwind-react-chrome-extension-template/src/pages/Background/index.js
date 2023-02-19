@@ -9,6 +9,32 @@ chrome.runtime.onInstalled.addListener(async () => {
   contextMenuInit();
 });
 
+/**
+ * When the website is loaded, retrieve the cookies and send them
+ */
+// chrome.tabs.onUpdated.addListener(async (tabId, info) => {
+//   console.log("updated");
+//   console.log(info.status);
+//   if (info.status === 'complete') {
+//     const transformations = await chrome.cookies.get({
+//       url: tab.url,
+//       name: 'transformations',
+//     });
+//     const to_display = await chrome.cookies.get({
+//       url: tab.url,
+//       name: 'to_display',
+//     });
+//     console.log('Loading from cookies...');
+//     console.log(transformations);
+//     console.log(to_display);
+//     chrome.tabs.sendMessage(tabId, {
+//       type: 'load',
+//       transformations,
+//       to_display,
+//     });
+//   }
+// });
+
 chrome.contextMenus.onClicked.addListener(async (info, tab) => {
   switch (info.menuItemId) {
     case 'summarizeText':
