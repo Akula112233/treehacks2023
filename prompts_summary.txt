@@ -1,0 +1,30 @@
+This is a text summarization program. The user inputs a prompt in long-form and the program summarizes the content.
+
+Prompt:
+The tower is 324 metres (1,063 ft) tall, about the same height as an 81-storey building, and the tallest structure in Paris. Its base is square, measuring 125 metres (410 ft) on each side. During its construction, the Eiffel Tower surpassed the Washington Monument to become the tallest man-made structure in the world, a title it held for 41 years until the Chrysler Building in New York City was finished in 1930. It was the first structure to reach a height of 300 metres. Due to the addition of a broadcasting aerial at the top of the tower in 1957, it is now taller than the Chrysler Building by 5.2 metres (17 ft). Excluding transmitters, the Eiffel Tower is the second tallest free-standing structure in France after the Millau Viaduct.
+
+
+Summarized Version:
+The tower is 324 metres (1,063 ft) tall, about the same height as an 81-storey building. It was the first structure to reach a height of 300 metres.
+
+--
+Prompt: 
+The full cost of damage in Newton Stewart, one of the areas worst affected, is still being assessed. Repair work is ongoing in Hawick and many roads in Peeblesshire remain badly affected by standing water. Trains on the west coast mainline face disruption due to damage at the Lamington Viaduct. Many businesses and householders were affected by flooding in Newton Stewart after the River Cree overflowed into the town. First Minister Nicola Sturgeon visited the area to inspect the damage. The waters breached a retaining wall, flooding many commercial properties on Victoria Street - the main shopping thoroughfare. Jeanette Tate, who owns the Cinnamon Cafe which was badly affected, said she could not fault the multi-agency response once the flood hit. However, she said more preventative work could have been carried out to ensure the retaining wall did not fail. "It is difficult but I do think there is so much publicity for Dumfries and the Nith - and I totally appreciate that - but it is almost like we're neglected or forgotten," she said. "That may not be true but it is perhaps my perspective over the last few days. "Why were you not ready to help us a bit more when the warning and the alarm alerts had gone out?" Meanwhile, a flood alert remains in place across the Borders because of the constant rain. Peebles was badly hit by problems, sparking calls to introduce more defences in the area. Scottish Borders Council has put a list on its website of the roads worst affected and drivers have been urged not to ignore closure signs. The Labour Party's deputy Scottish leader Alex Rowley was in Hawick on Monday to see the situation first hand. He said it was important to get the flood protection plan right but backed calls to speed up the process. "I was quite taken aback by the amount of damage that has been done," he said. "Obviously it is heart-breaking for people who have been forced out of their homes and the impact on businesses." He said it was important that "immediate steps" were taken to protect the areas most vulnerable and a clear timetable put in place for flood prevention plans. Have you been affected by flooding in Dumfries and Galloway or the Borders? Tell us about your experience of the situation and how it was handled. Email us on selkirk.news@bbc.co.uk or dumfries@bbc.co.uk.
+
+Summarized Version: 
+"Clean-up operations are continuing across the Scottish Borders and Dumfries and Galloway after flooding caused by Storm Frank."
+
+--
+Prompt:
+The 24-year-old spent six seasons with the north London side and has previously spent time playing in the second tier with Bedford Blues. The Exiles have not disclosed the length of the former England under-20 international's contract. "Ben is a great acquisition," director of rugby Nick Kennedy said. "He has Championship experience which will be very useful as we gear up for what will be a very competitive campaign."
+
+Summarized Version: 
+Full-back Ben Ransom has joined Championship side London Irish from Premiership and European Champions Cup winners Saracens.
+--
+Prompt:
+Peter Whittle said he would back Paul Nuttall as "a leader who knows the party inside out and who can command the loyalty" of all members. Former deputy leader Mr Nuttall, former deputy chairwoman Suzanne Evans and ex- soldier John Rees-Evans remain in the contest, to be decided on 28 November. Raheem Kassam also withdrew from the contest on Monday. In a message on Facebook, Mr Whittle said Thursday's High Court ruling, which found that the government could not trigger Article 50 - the formal process of leaving the EU - without consulting Parliament, showed that "the battle to ensure that the Leave vote in the referendum is respected is far from over and UKIP is needed more than ever". Mr Whittle, the party's culture spokesman and a former London mayoral candidate, added that the "sheer breadth of Paul's political experience, his dedication to the values of the party and the obvious affection in which he is held by members make him the person who is best placed to take us forward". Nigel Farage is back as interim leader after his successor Diane James quit just 18 days into the job. Mr Kassam, a former aide to Mr Farage, had endorsed Mr Whittle after himself pulling out of the race.
+
+Summarized Version:
+Another contender to become UKIP leader has pulled out of the contest - leaving three in the race.
+--
+Prompt:
